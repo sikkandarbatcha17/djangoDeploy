@@ -61,6 +61,14 @@ font-family:  Times new roman;
 <body>
 {% load static %}
 <center>
+    PATIENT DETAILS:
+<br><br>
+    Patient Name: {{emp.First_Name}} {{emp.Last_Name}}
+    <br>
+    Patient Id: {{emp.Patient_Id}}
+    <br>
+    Scanned Image: {{emp.UPLOAD_SKIN_IMAGES}}
+    <br>
     <img src="{{emp.UPLOAD_SKIN_IMAGES.url}}" alt="Smiley face" width="250" height="250">
     <br>
     <a href="{% url 'OBJECT' %}">Result</a>&#160;&#160;&#160;
